@@ -1,0 +1,30 @@
+#project-heading{
+    font-size: 2.3rem;
+    color:red;
+    text-align: center;
+    padding-top: 4rem;
+}
+.all-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-top: 2.7rem;
+    /* border: 2px solid red; */
+    width: 100%;
+    
+
+   
+}
+@media only screen and (max-width: 900px){
+    .all-cards{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .all-cards{
+        flex-direction: column;
+
+    }
+}

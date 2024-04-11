@@ -1,0 +1,228 @@
+.Home-container{
+    width: 100%;
+    height: 62vh;
+    /* background-color: #2D3748; */
+    background-color: #141414;
+}
+.main{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap ;
+}
+.left{
+    width: 50%;
+    flex-wrap: wrap ;
+}
+.left .text{
+    background-color: transparent;
+    margin: 50px 0px 00px 0px;
+    color: white;
+    
+    font-family: "Inter", sans-serif;
+    line-height: 4.2rem;
+    display: flex;
+    
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.left .text h1 {
+    font-weight: 900;
+    font-size: 3.3rem;
+}
+.left .text h1 span{
+    color: red;
+}
+.left .text p{
+    font-size: 1.1rem;
+    color: #CBD5E0;
+    font-weight: 600;
+}
+/* /now there is tyling for buttons */
+.btns{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+}
+button{
+    padding: 15px 35px;
+    border-radius: 40px;
+    border  : none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #E2E8F0;
+    margin-bottom: 10px; 
+    cursor: pointer;
+    
+}
+button:nth-child(1){
+    background-color: red;
+    border: 4px solid red;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+button:nth-child(1):hover{
+    background-color: rgb(244, 54, 86);
+    color: black;
+    border: 4px solid rgb(244, 54, 86);
+}
+#btn2{
+   background-color: transparent;
+   border: 4px solid red;
+   box-sizing: border-box;
+   font-weight: 600;
+}
+#btn2:hover{
+   border: 4px solid rgb(244, 54, 86);
+   color: #E2E8F0;
+}
+/* now styling for right side  */
+.right{
+width: 50%;
+padding-top: 40px;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+.right .image{
+  width: 100%;
+  height: 200px;
+  /* background-color: red; */
+  background-image: url(./background.png);
+  background-size:10ch;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right .image img{
+    width: 60%;
+    border-radius: 100%;
+    opacity: 100;
+    /* height: 150%;  */
+    border-right: 20px solid #323232 ;
+    
+    
+}
+
+
+/* here we are working in portfolio section */
+#container{
+    width: 100%;
+    /* background-color: #1A202C; */
+    background-color: #0F0F0F;
+}
+.portfolio-section{
+    width: 70%;
+    padding: 5rem 0px 3rem 0px; 
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+   
+}
+.portfolio{
+    width: 100%;
+}
+
+/* here working for skills section */
+.skills-box{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    width: 100%;
+    color: red;
+    font-size: 1.6rem;
+}
+.skills{
+    display: flex;
+    gap: 1rem;
+}
+#icon1{
+    color: red;
+}
+#icon2{
+    color: rgb(127, 127, 255);
+}
+#icon3{
+    color: yellow;
+}
+#icon4{
+    color: rgb(109, 109, 233);
+    /* color: rgb(51, 51, 240); */
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    .left .text h1{
+        font-size: 2.8rem;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .left .text h1{
+        font-size: 2.2rem;
+    }
+    .Home-container{
+        height: fit-content;
+        padding-bottom: 5rem;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    .right{
+        display: none;
+    }
+    .main{
+        width: 90%;
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+    .btns{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 900px){
+
+.portfolio-section{
+flex-direction: column-reverse;
+align-items: center;
+gap: 4rem;
+}
+.Home-container{
+    height: fit-content;
+    padding-bottom: 5rem;
+}
+
+}
+@media only screen and (max-width: 600px){
+    .portfolio-section{
+        width: 80%;
+    }
+    .portfolio{
+        width: 100%;
+    }
+    .Home-container{
+        height: fit-content;
+        padding-bottom: 5rem;
+        padding-top: 3rem;
+    }
+    button{
+        padding: 10px 15px;
+
+    }
+    .btns{
+        margin-top: 30px;
+    }
+    .left .text p{
+        font-size: 1.05rem;
+    }
+}
